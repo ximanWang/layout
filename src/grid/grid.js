@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import * as serviceWorker from '../serviceWorker';
 
-ReactDOM.render(<div >grid</div>, document.getElementById('root'));
+function Grid () {
 
-
-// serviceWorker.unregister();
+    return (
+        <div>grid</div>
+    );
+}
+ReactDOM.render(<Grid />, document.getElementById('root'));
