@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(3, 33.33%);
+  .item1 {
+    background-color: rgb(255, 0, 0);
+  }
+  .item2 {
+    background-color: #fc8a08;
+  }
+  .item3 {
+    background-color: rgb(71, 216, 27);
+  }
+  .item4 {
+    background-color: rgb(14, 133, 231);
+  }
+  .item5 {
+    background-color: #ffe600;
+  }
+  .item6 {
+    background-color: rgb(245, 7, 233);
+  }
+  .item7 {
+    background-color: rgb(223, 12, 117);
+  }
+  .item8 {
+    background-color: rgb(19, 148, 235);
+  }
+  .item9 {
+    background-color: rgb(236, 221, 12);
+  }
+}
