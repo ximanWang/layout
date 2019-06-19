@@ -10,6 +10,9 @@ ReactDOM.render(<div className="pageList">
     <a className="pageItem" href='/grid.html'>
         Grid
     </a>
+    <a className="pageItem" href='/location.html'>
+        Location
+    </a>
 </div>, document.getElementById('root'));
 
 serviceWorker.unregister();

@@ -145,6 +145,11 @@ module.exports = function (webpackEnv) {
         require.resolve('react-dev-utils/webpackHotDevClient'),
         paths.appSrc + '/grid/grid.js'
       ],
+      location: [
+        require.resolve('react-error-overlay'),
+        require.resolve('react-dev-utils/webpackHotDevClient'),
+        paths.appSrc + '/location/index.js'
+      ]
     },
     output: {
       path: paths.appBuild,
@@ -471,6 +476,12 @@ module.exports = function (webpackEnv) {
         chunks: ["grid"],
         template: paths.appHtml,
         filename: 'grid.html'
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        chunks: ["location"],
+        template: paths.appHtml,
+        filename: 'location.html'
       }),
     ],
     // Some libraries import Node modules but don't use them in the browser.
